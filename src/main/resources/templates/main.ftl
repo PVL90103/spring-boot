@@ -21,10 +21,10 @@
     </form>
 <#list messages as message>
 <div>
-    <b>${message.id}</b>
+    <b>${message.id!}</b>
     <span>${message.text}</span>
     <i>${message.tag}</i>
-    <strong>${message.getAuthorName}</strong>
+
 </div>
 <#else>
 No message
